@@ -11,7 +11,7 @@ enum COLOR {
 class Card {
 
 public:
-    static int deckSize = 0; // Num Cards generated.
+//    static int deckSize = 0; // Num Cards generated.
     SUIT logo;
     int value;
 
