@@ -15,6 +15,8 @@ public:
     SUIT logo;
     int value;
 
+    Card();
+
     COLOR getColor();
 
 
