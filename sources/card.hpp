@@ -1,8 +1,21 @@
-//
-// Created by roey-ubuntu on 3/22/23.
-//
+#include <iostream>
 
-#ifndef CARDWAR_A_CARD_HPP
-#define CARDWAR_A_CARD_HPP
+using namespace std;
+enum SUIT {
+    HEART = 0, DIAMOND = 1, SPADE = 2, CLUB = 3
+};
+enum COLOR {
+    RED = 0, BLACK = 1
+};
 
-#endif //CARDWAR_A_CARD_HPP
+class Card {
+
+public:
+    static int deckSize = 0; // Num Cards generated.
+    SUIT logo;
+    int value;
+
+    COLOR getColor();
+
+
+};
