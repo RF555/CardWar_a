@@ -16,7 +16,7 @@ namespace ariel {
 //        ~Player() {}
 
 /**
- * @return The amount of cards left in the deck.
+ * @return The amount of cards left in the to play.
 */
         int stacksize() { return 0; }
 
