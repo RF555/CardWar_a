@@ -1,6 +1,6 @@
 #include <iostream>
 
-//using namespace std;
+using namespace std;
 namespace ariel {
 //enum SUIT {
 //    HEART = 0, DIAMOND = 1, SPADE = 2, CLUB = 3
@@ -11,14 +11,14 @@ namespace ariel {
 
     class Card {
 
-    public:
+//    public:
 //    static int deckSize = 0; // Num Cards generated.
 //    SUIT logo;
-//    int value;
+//        int value;
 
-        Card();
+//        Card(int n) { this->value = n }
 
-        ~Card();
+//        ~Card(){}
 
 //    COLOR getColor();
 

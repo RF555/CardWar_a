@@ -1,28 +1,29 @@
 #include <iostream>
 //#include "card.hpp"
 
-//using namespace std;
+using namespace std;
 namespace ariel {
 
     class Player {
     public:
-//    string name;
+        string name;
 //    Card deck;
 
-        Player(string _name);
+        Player() { this->name = "NoName"; }
 
-        ~Player();
+        Player(string _name) { this->name = _name; }
+
+//        ~Player() {}
 
 /**
-* @brief Print the amount of cards left.
- * Should be 21 but can be less if a draw was played.
+ * @return The amount of cards left in the deck.
 */
-        void stacksize();
+        int stacksize() { return 0; }
 
 /**
- * @brief Print the amount of cards this player has won.
+ * @return The amount of cards this player has won.
  */
-        void cardesTaken();
+        int cardesTaken() { return 0; }
 
     };
 }
