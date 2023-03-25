@@ -1,25 +1,27 @@
 #include <iostream>
 
-using namespace std;
-enum SUIT {
-    HEART = 0, DIAMOND = 1, SPADE = 2, CLUB = 3
-};
-enum COLOR {
-    RED = 0, BLACK = 1
-};
+//using namespace std;
+namespace ariel {
+//enum SUIT {
+//    HEART = 0, DIAMOND = 1, SPADE = 2, CLUB = 3
+//};
+//enum COLOR {
+//    RED = 0, BLACK = 1
+//};
 
-class Card {
+    class Card {
 
-public:
+    public:
 //    static int deckSize = 0; // Num Cards generated.
-    SUIT logo;
-    int value;
+//    SUIT logo;
+//    int value;
 
-    Card();
+        Card();
 
-    ~Card();
+        ~Card();
 
-    COLOR getColor();
+//    COLOR getColor();
 
 
-};
+    };
+}
