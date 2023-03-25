@@ -17,12 +17,12 @@ namespace ariel {
 * @brief Print the amount of cards left.
  * Should be 21 but can be less if a draw was played.
 */
-        int stacksize();
+        void stacksize();
 
 /**
  * @brief Print the amount of cards this player has won.
  */
-        int cardesTaken();
+        void cardesTaken();
 
     };
 }
