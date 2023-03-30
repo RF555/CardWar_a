@@ -8,14 +8,29 @@ namespace ariel {
     enum COLOR {
         RED = 0, BLACK = 1, COLOR_UNDEFINED = -1
     };
+    enum RANK {
+        ACE = 1, TWO = 2,
+        THREE = 3,
+        FOUR = 4,
+        FIVE = 5,
+        SIX = 6,
+        SEVEN = 7,
+        EIGHT = 8,
+        NINE = 9,
+        TEN = 10,
+        JACK = 11,
+        QUEEN = 12,
+        KING = 13,
+        RANK_UNDEFINED = -1
+    };
 
     class Card {
         SUIT _suit;
         COLOR _col;
-        int _value;
+        RANK _rank;
     public:
 
-        Card(SUIT s = SUIT_UNDEFINED, int val = -1, COLOR col = COLOR_UNDEFINED);
+        Card(SUIT s = SUIT_UNDEFINED, RANK rank = RANK_UNDEFINED, COLOR col = COLOR_UNDEFINED);
 
         ~Card();
 
@@ -23,9 +38,9 @@ namespace ariel {
 
         COLOR getColor();
 
-        int getVal();
+        int getRank();
 
-        void setCard(SUIT s, int val, COLOR col);
+        void setCard(SUIT s, RANK rank, COLOR col);
 
 
     };
